@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Book Store</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<!--div th:insert="sample :: sample"></div-->
+<h1 th:inline="text">Welcome, [[${username}]] as Admin </h1>
+<div class="Add Book">
+  <a href="/addBook">Add Book</a>
+</div>
+<div class="Remove Book">
+  <a href="/removebook">Remove Book</a>
+</div><div class="View Books">
+  <a href="/book?isAdmin=true">View Books</a>
+</div>
+</body>
+</html>

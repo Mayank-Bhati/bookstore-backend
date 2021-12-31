@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Book</title>
+</head>
+<body>
+<h1>Book Details!</h1>
+<table>
+    <tr></tr><td>Name: <span th:text="${book.name}"></span> </td></tr>
+    <tr><td>Author: <span th:text="${book.author}"></span></td></tr>
+    <tr><td>Price: <span th:text="${book.price}"></span></td></tr>
+    <td>Buy Quantity: <input type="number" min="1" th:max="${book.quantity}" value="1"/></td>
+</table>
+</body>
+</html>
